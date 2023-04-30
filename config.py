@@ -13,5 +13,5 @@ class Config:
                              sslcert="client.crt", sslkey="client.key",
                              sslrootcert="ca.crt", sslmode="verify-full", ssl_min_protocol_version="TLSv1.3")
     }
-    # SQLALCHEMY_DATABASE_URI = f"postgresql://{db_info['user']}:{db_info['psw']}@{db_info['host']}/{db_info['database']}"
+    SQLALCHEMY_DATABASE_URI = f"postgresql://{db_info['user']}:{db_info['psw']}@{db_info['host']}/{db_info['database']}"
 
