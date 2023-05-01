@@ -12,3 +12,6 @@ db = flask_sqlalchemy.SQLAlchemy(flask_app)
 migrate = flask_migrate.Migrate(flask_app, db)
 
 from app import routes, models
+
+with flask_app.app_context():
+	db.create_all()
